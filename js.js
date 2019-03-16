@@ -358,8 +358,6 @@ class Color {
 
     constructor() {
         this.colors = ["#FF4571", "#FFD145", "#8260F6"];
-        this.effects = ["bubble", "triangle", "block"];
-        this.prevEffect = null;
     }
 
     getRandomColor() {

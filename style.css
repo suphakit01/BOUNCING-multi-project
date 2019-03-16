@@ -562,8 +562,8 @@ a:focus, a:active {
 
 .mount1 {
   background: url(Pic/mount1.svg) repeat-x;
-  height: 18vh;
-  bottom: 320px;
+  height: 30vh;
+  bottom: 200px;
   z-index: 11;
 }
 
