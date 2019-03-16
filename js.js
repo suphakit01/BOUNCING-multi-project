@@ -524,8 +524,8 @@ class Animation {
         })
 
         var wavet = TweenMax.to('.top_wave', speed*1.7/42, {backgroundPositionX: '-=54px', repeat: -1, ease: Power0.easeNone});
-        var wave1 = TweenMax.to('.wave1', speed*1.9/42, {backgroundPositionX: '-=54px', repeat: -1, ease: Power0.easeNone});
-        var wave2 = TweenMax.to('.wave2', speed*2/42, {backgroundPositionX: '-=54px', repeat: -1, ease: Power0.easeNone});
+        var wave1 = TweenMax.to('.wave1', speed*1, {backgroundPositionX: '-=1001px', repeat: -1, ease: Power0.easeNone});
+        var wave2 = TweenMax.to('.wave2', speed*1.5, {backgroundPositionX: '-=1001px', repeat: -1, ease: Power0.easeNone});
         var wave3 = TweenMax.to('.wave3', speed*2.2/42, {backgroundPositionX: '-=54px', repeat: -1, ease: Power0.easeNone});
         var wave4 = TweenMax.to('.wave4', speed*2.4/42, {backgroundPositionX: '-=54px', repeat: -1, ease: Power0.easeNone});
 

@@ -1,3 +1,7 @@
+*{
+  cursor: url(Pic/UFO.png), auto;
+}
+
 .bubble {
   border-radius: 50%;
   position: absolute;
@@ -487,10 +491,10 @@ body {
 }
 
 a {
-  cursor: url(https://greghub.github.io/coloron/public/svg/cursor.svg), pointer;
+  cursor: url(Pic/UFO.png), pointer;
 }
 a:focus, a:active {
-  cursor: url(https://greghub.github.io/coloron/public/svg/cursor-tap.svg), pointer;
+  cursor: url(Pic/UFO.png), pointer;
 }
 
 .container {
@@ -527,26 +531,26 @@ a:focus, a:active {
 
 .top_wave {
   background: url(Pic/top_wave.svg) repeat-x 0 -1px;
-  height: 36px;
-  bottom: 0;
+  height: 40px;
+  bottom: -5px;
   z-index: 10001;
 }
 
 .wave1 {
-  background: url(Pic/wave1.svg) repeat-x;
-  height: 150px;
+  background: url(Pic/ground.svg) repeat-x;
+  height: 350px;
   bottom: 0;
-  z-index: 23;
-}
-
-.wave2 {
-  background: url(Pic/wave2.svg) repeat-x;
-  height: 180px;
-  bottom: 60px;
   z-index: 22;
 }
 
-.wave3 {
+.wave2 {
+  background: url(Pic/ground2.png) repeat-x;
+  height: 390px;
+  bottom: 150px;
+  z-index: 23;
+}
+
+/*.wave3 {
   background: url(Pic/wave3.svg) repeat-x;
   height: 180px;
   bottom: 120px;
@@ -558,7 +562,7 @@ a:focus, a:active {
   height: 180px;
   bottom: 160px;
   z-index: 20;
-}
+}*/
 
 .mount1 {
   background: url(Pic/mount1.svg) repeat-x;
@@ -601,7 +605,7 @@ a:focus, a:active {
   left: 0;
   top: 0;
   z-index: 1010;
-  background: url(https://greghub.github.io/coloron/public/svg/noise.png);
+  background: url(Pic/noise.png);
 }
 
 .sticks {
@@ -614,16 +618,16 @@ a:focus, a:active {
   height: 362px;
   width: 90px;
   border-radius: 14px;
-  background-image: url(https://greghub.github.io/coloron/public/svg/noise.png);
+  background-image: url(Pic/noise.png);
   position: relative;
   overflow: hidden;
   float: left;
   margin-right: 90px;
   transition: background-color 0.4s ease;
-  cursor: url(https://greghub.github.io/coloron/public/svg/cursor.svg), pointer;
+  cursor: url(Pic/UFO.png), pointer;
 }
 .stick:focus, .stick:active {
-  cursor: url(https://greghub.github.io/coloron/public/svg/cursor-tap.svg), pointer;
+  cursor: url(Pic/UFO.png), pointer;
 }
 
 .stick.red {
@@ -796,10 +800,10 @@ a:focus, a:active {
   background: #4C4660;
 }
 .start-game .how-to-play .section-2 .bar {
-  cursor: url(https://greghub.github.io/coloron/public/svg/cursor.svg), pointer;
+  cursor: url(Pic/UFO.png), pointer;
 }
 .start-game .how-to-play .section-2 .bar:focus, .start-game .how-to-play .section-2 .bar:active {
-  cursor: url(https://greghub.github.io/coloron/public/svg/cursor-tap.svg), pointer;
+  cursor: url(Pic/UFO.png), pointer;
 }
 .start-game .how-to-play .section-3 .ball-demo {
   background-color: #815FF8;
