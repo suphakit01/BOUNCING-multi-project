@@ -469,11 +469,21 @@
 }
 
 body {
-  background-color: #28DAD4;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(to bottom, #ab93c9, #ffbea3, #ffd3a3);
   margin: 0;
   padding: 0;
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
+}
+
+.background{
+  background-image: linear-gradient(#ab93c9, #ffbea3);
+  width: 100%;
+  height: 100eh;
 }
 
 a {
@@ -498,68 +508,90 @@ a:focus, a:active {
   bottom: 0;
 }
 
-.waves div, .mounts div {
+.waves div, .mounts div, .star div{ /*New code .star div*/
   position: absolute;
   width: 100%;
 }
 
 .clouds {
+  z-index: 12;
   position: absolute;
   width: 100%;
   left: 0;
   top: 77px;
   height: 151px;
-  background: url(https://greghub.github.io/coloron/public/svg/clouds.svg) repeat-x;
+  opacity: 0.4;
+  background: url(Pic/clouds.svg) repeat-x;
   background-position-x: 170px;
 }
 
 .top_wave {
-  background: url(https://greghub.github.io/coloron/public/svg/top_wave.png) repeat-x 0 -1px;
-  height: 35px;
+  background: url(Pic/top_wave.svg) repeat-x 0 -1px;
+  height: 36px;
   bottom: 0;
   z-index: 10001;
 }
 
 .wave1 {
-  background: url(https://greghub.github.io/coloron/public/svg/wave1.svg) repeat-x;
+  background: url(Pic/wave1.svg) repeat-x;
   height: 150px;
   bottom: 0;
   z-index: 23;
 }
 
 .wave2 {
-  background: url(https://greghub.github.io/coloron/public/svg/wave2.svg) repeat-x;
+  background: url(Pic/wave2.svg) repeat-x;
   height: 180px;
-  bottom: 30px;
+  bottom: 60px;
   z-index: 22;
 }
 
 .wave3 {
-  background: url(https://greghub.github.io/coloron/public/svg/wave3.svg) repeat-x;
+  background: url(Pic/wave3.svg) repeat-x;
   height: 180px;
-  bottom: 90px;
+  bottom: 120px;
   z-index: 21;
 }
 
 .wave4 {
-  background: url(https://greghub.github.io/coloron/public/svg/wave4.svg) repeat-x;
+  background: url(Pic/wave4.svg) repeat-x;
   height: 180px;
-  bottom: 120px;
+  bottom: 160px;
   z-index: 20;
 }
 
 .mount1 {
-  background: url(https://greghub.github.io/coloron/public/svg/mount1.svg) repeat-x;
-  height: 150px;
-  bottom: 280px;
+  background: url(Pic/mount1.svg) repeat-x;
+  height: 18vh;
+  bottom: 320px;
   z-index: 11;
 }
 
 .mount2 {
-  background: url(https://greghub.github.io/coloron/public/svg/mount2.svg) repeat-x;
-  height: 150px;
-  bottom: 290px;
+  background: url(Pic/mount2.svg) repeat-x;
+  height: 18vh;
+  bottom: 320px;
   z-index: 10;
+}
+
+.star1 {
+  filter: blur(0.9px);
+  background: url(Pic/star1.svg) no-repeat;
+  left: 600px;
+  top: 45px;
+  height: 100vh;
+  bottom: 320px;
+  z-index: 9;
+}
+
+.star2 {
+  filter: blur(0.9px);
+  background: url(Pic/star2.svg) no-repeat;
+  left: 300px;
+  top: 45px;
+  height: 10vh;
+  bottom: 320px;
+  z-index: 9;
 }
 
 .noise {
@@ -570,44 +602,6 @@ a:focus, a:active {
   top: 0;
   z-index: 1010;
   background: url(https://greghub.github.io/coloron/public/svg/noise.png);
-}
-
-.glow {
-  position: absolute;
-  left: -350px;
-  top: -350px;
-  width: 800px;
-  height: 800px;
-  background-color: rgba(81, 237, 200, 0.34);
-  border-radius: 50%;
-  box-shadow: 0 0 100px 100px rgba(81, 237, 200, 0.34);
-  z-index: 1010;
-}
-
-.sun {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  width: 1px;
-  height: 1px;
-  background-color: #ffe345;
-  border-radius: 50%;
-  box-shadow: 0 0 32px 32px #ffe345, 0 0 150px 150px rgba(103, 244, 210, 0.4);
-}
-
-.small-glow {
-  z-index: 99;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.34);
-  box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.34);
-}
-
-.small-glow.yellow {
-  background-color: rgba(255, 227, 69, 0.34);
-  box-shadow: 0 0 4px 4px rgba(255, 227, 69, 0.34);
 }
 
 .sticks {
@@ -703,14 +697,24 @@ a:focus, a:active {
   opacity: 0.7;
 }
 .start-game .logo-holder {
-  width: 513px;
+  position: absolute; /*New code*/
+  top: 50%; /*New code*/
+  width: 600px;
   height: 162px;
   background-color: #4C4660;
   border: 4px solid #FF4571;
   border-radius: 68px;
   text-align: center;
   margin-top: -10%;
+  box-shadow: 0px 0px 100px #ffe6bf;
+  transition: .5s;
 }
+
+.start-game .logo-holder:hover {
+  box-shadow: 0px 0px 300px #ffe6bf;
+
+}
+
 .start-game .logo-holder .logo {
   color: #fff;
   text-transform: uppercase;
@@ -722,8 +726,8 @@ a:focus, a:active {
   text-align: center;
 }
 .start-game .logo-holder .logo span {
-  margin-left: -8px;
-  margin-right: -8px;
+  margin-left: -4px;
+  margin-right: -4px;
 }
 .start-game .logo-holder .play-button {
   display: inline-block;
@@ -962,3 +966,246 @@ a:focus, a:active {
   z-index: 9999;
 }
 
+.playit{
+  width: auto;
+  height: auto;
+  padding: .3em .6em .3em .6em !important;
+  float: right;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  border: 5px solid #fff;
+  content: "play";
+  transition: .25s;
+}
+.playit::before{
+  content: "play";
+}
+.playit:hover{
+  box-shadow: 0px 0px 20px rgb(136, 136, 136);
+}
+
+/*
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 160px;
+  overflow: hidden;
+  font-size: 35px;
+  line-height: 40px;
+  color: #ecf0f1;
+}
+.content__container {
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 40px;
+}
+.content__container:before {
+  content: '[';
+  left: 0;
+}
+.content__container:after {
+  content: ']';
+  position: absolute;
+  right: 0;
+}
+.content__container:after, .content__container:before {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  font-size: 42px;
+  line-height: 40px;
+  -webkit-animation-name: opacity;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: opacity;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.content__container__text {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+.content__container__list {
+  margin-top: 0;
+  padding-left: 110px;
+  text-align: left;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.content__container__list__item {
+  line-height: 40px;
+  margin: 0;
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes change {
+  0%, 12.66%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  16.66%, 29.32% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+  33.32%,45.98% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  49.98%,62.64% {
+    -webkit-transform: translate3d(0, -75%, 0);
+            transform: translate3d(0, -75%, 0);
+  }
+  66.64%,79.3% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  83.3%,95.96% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+}
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes change {
+  0%, 12.66%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  16.66%, 29.32% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+  33.32%,45.98% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  49.98%,62.64% {
+    -webkit-transform: translate3d(0, -75%, 0);
+            transform: translate3d(0, -75%, 0);
+  }
+  66.64%,79.3% {
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+  83.3%,95.96% {
+    -webkit-transform: translate3d(0, -25%, 0);
+            transform: translate3d(0, -25%, 0);
+  }
+}
+
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+a.animated-button:link:after, a.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover {
+	color: #FFF;
+	text-shadow: none;
+}
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+	height: 450%;
+}
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+a.animated-button.thar-four {
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 4px solid #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+a.animated-button.thar-four:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: nfour;
+}
+a.animated-button.thar-four:hover:before {
+	right: 0%;
+	left: auto;
+	width: 100%;
+}
+a.animated-button.thar-four:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}*/
