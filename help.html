@@ -39,11 +39,6 @@
     <meta property="og:url" content="https://suphakit01.github.io/alien-bounce-game/">
     <meta property="og:description" content="A game made to inspire developers to use GSAP, ES6 and Flexbox">
 
-
-<!---------------------- Font Awsome ---------------------->
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
 </head>
 <body>
 
@@ -55,10 +50,10 @@
             <div class="logo-holder">
                 <a class="play-button" href="#" onclick="game.start()">Play</a>
                 <a class="help-button" href="#">Help</a><br>
+                <h4 class="hint">hint: <span>red</span> color always comes first</h4>
             </div>
 
             <div class="how-to-play">
-                <!--<h4 class="hint">hint: <span>red</span> color always comes first</h4>-->
                 <div class="section section-1">
                     <h4>Bouncing Alien<br>changes color</h4>
                     <div class="content">
@@ -133,29 +128,33 @@
         <div class="noise"></div>
 
     </div>
+
+    <!---------------------- Music ---------------------->
+    
     <audio controls loop autoplay hidden><source src="Music/Kerorin.mp3" type="audio/mpeg"></audio>
 
-        <script>
-    /* LOGO */
-    var animateText = document.getElementById("animated-text");
-    var textArray = animateText.innerText.split("");
+    <script>
+        /* LOGO */
+        var animateText = document.getElementById("animated-text");
+        var textArray = animateText.innerText.split("");
 
-    animateText.firstChild.remove();
+        animateText.firstChild.remove();
 
-    //Probably a better way to do this.
-    var elArray = textArray.map(
-    (letter,index)=>{
-        if(letter==" ") letter = '&nbsp;';
-        var el = document.createElement("span");
-        el.className = "letter";
-        el.innerHTML = letter;
-        el.style.animationDelay = index/(textArray.length)+"s";
-        animateText.appendChild(el);
-        return el;
-    }
-    );
+        //Probably a better way to do this.
+        var elArray = textArray.map(
+        (letter,index)=>{
+            if(letter==" ") letter = '&nbsp;';
+            var el = document.createElement("span");
+            el.className = "letter";
+            el.innerHTML = letter;
+            el.style.animationDelay = index/(textArray.length)+"s";
+            animateText.appendChild(el);
+            return el;
+        }
+        );
 
-    animateText.innerHtml = elArray;</script>
+        animateText.innerHtml = elArray;
+    </script>
 </body>
 
 </html>

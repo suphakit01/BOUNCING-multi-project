@@ -577,4 +577,3 @@ class Animation {
             $(window).on("orientationchange",function(){
                 game.scaleScreenAndRun();
             });
-
