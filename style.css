@@ -156,7 +156,7 @@ a:focus, a:active {
 }
 
 .stick.purple {
-  background-color: #8260F6;
+  background-color: #66cc66;
 }
 
 .stick.inactive {
@@ -474,7 +474,7 @@ a:focus, a:active {
     width: 100%;
     height: 100%;
     background-color: #28DAD4;
-    background-image: url(Pic/BOUNCING.jpg);
+    background-image: url(Pic/BOUNCING-image.jpg);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
