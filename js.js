@@ -8,7 +8,7 @@ class Game {
 
         this.timeline = new TimelineMax({smoothChildTiming: true});
         this.time = 1.6; // initial speed
-        this.colors = ["#FF4571", "#FFD145", "#8260F6"]; // the 3 colors used in the game
+        this.colors = ["#FF4571", "#FFD145", "#66cc66"]; // the 3 colors used in the game
         this.colorsRGBA = ["rgba(255, 69, 113, 1)", "rgba(255, 69, 113, 1)", "rgba(255, 69, 113, 1)"];
         this.color = this.colors[0]; // the intial color of the ball
         this.prevColor = null; // used as a holder to prevent ball colors from repeating
@@ -352,7 +352,7 @@ class Stick {
 class Color {
 
     constructor() {
-        this.colors = ["#FF4571", "#FFD145", "#8260F6"];
+        this.colors = ["#FF4571", "#FFD145", "#66cc66"];
     }
 
     getRandomColor() {
@@ -362,7 +362,7 @@ class Color {
     } 
 
     colorcodeToName(color) {
-        let colors = ["#FF4571", "#FFD145", "#8260F6"];
+        let colors = ["#FF4571", "#FFD145", "#66cc66"];
         let names = ["red", "yellow", "purple"];
         let index = colors.indexOf(color);
         if(index == -1) return false;

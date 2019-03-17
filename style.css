@@ -156,7 +156,7 @@ a:focus, a:active {
 }
 
 .stick.purple {
-  background-color: #66cc66;
+  background-color: #664466;
 }
 
 .stick.inactive {
@@ -339,11 +339,11 @@ a:focus, a:active {
   cursor: url(Pic/UFO.png), pointer;
 }
 .start-game .how-to-play .section-3 .ball-demo {
-  background-color: #815FF8;
+  background-color: #66cc66;
 }
 .start-game .how-to-play .section-3 .bar-1 {
   height: 120px;
-  background-color: #815FF8;
+  background-color: #66cc66;
 }
 
 .stop-game {
