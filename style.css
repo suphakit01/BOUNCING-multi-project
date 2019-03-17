@@ -520,6 +520,16 @@ a:focus, a:active {
 #animated-text span.letter{
   display:inline-block;
   animation: 1s wave backwards ease-in-out;
+  -webkit-animation: 1s wave backwards ease-in-out;
+}
+
+@-webkit-keyframes wave {
+  0%{
+    -webkit-transform: translateY(0em);
+  }
+  50%{
+    -webkit-transform: translateY(-1em);
+  }
 }
 
 @keyframes wave {
