@@ -163,7 +163,7 @@ a:focus, a:active {
 }
 
 .ball, .ball-demo {
-  background: url(https://greghub.github.io/coloron/public/svg/ball.svg) right bottom;
+  background: url(Pic/ball.svg) right bottom;
   background-size: 64px 64px;
   width: 53px;
   height: 53px;
@@ -197,6 +197,7 @@ a:focus, a:active {
 .start-game .start-game-top {
   min-height: 20%;
 }
+
 .start-game .start-game-top .play-full-page {
   display: none;
   border: 3px solid #fff;
@@ -237,10 +238,12 @@ a:focus, a:active {
   margin-bottom: 4px;
   text-align: center;
 }
+
 .start-game .logo-holder .logo span {
   margin-left: -4px;
   margin-right: -4px;
 }
+
 .start-game .logo-holder .play-button {
   display: inline-block;
   background-color: #23434b;
@@ -471,7 +474,7 @@ a:focus, a:active {
     width: 100%;
     height: 100%;
     background-color: #28DAD4;
-    background-image: url(https://greghub.github.io/coloron/public/images/coloron-image.png);
+    background-image: url(Pic/BOUNCING.jpg);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
