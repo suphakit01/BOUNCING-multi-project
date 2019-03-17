@@ -159,7 +159,7 @@ a:focus, a:active {
 }
 
 .stick.inactive {
-  background-color: #4C4660;
+  background-color: rgb(83, 83, 83);
 }
 
 .ball, .ball-demo {
@@ -220,9 +220,7 @@ a:focus, a:active {
 
 .start-game .logo-holder {
   position: absolute;
-  top: 58vh;
-  width: 600px;
-  height: 162px;
+  top: 60%;
   border-radius: 68px;
   text-align: center;
   margin-top: -10%;
@@ -258,9 +256,31 @@ a:focus, a:active {
   line-height: 56px;
   text-decoration: none;
 }
+
+.start-game .logo-holder .help-button {
+  display: inline-block;
+  background-color: #23434b;
+  border: 4px solid #fff;
+  border-radius: 100px;
+  color: #fff;
+  width: 200px;
+  height: 56px;
+  font-size: 42px;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: -3px;
+  line-height: 56px;
+  text-decoration: none;
+}
+
 .start-game .logo-holder .play-button:hover {
   background-color: #ff5f84;
 }
+
+.start-game .logo-holder .help-button:hover {
+  background-color: #00c2a2;
+}
+
 .start-game .logo-holder .hint {
   color: #fff;
   font-size: 20px;
