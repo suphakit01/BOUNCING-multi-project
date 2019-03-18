@@ -250,7 +250,7 @@ a:focus, a:active {
   border: 4px solid #fff;
   border-radius: 100px;
   color: #fff;
-  width: 200px;
+  width: 150px;
   height: 56px;
   font-size: 42px;
   text-align: center;
@@ -350,7 +350,7 @@ a:focus, a:active {
   justify-content: center;
 }
 .stop-game .score-container {
-  background-color: #4C4660;
+  background-color: #4C4660;*/
   width: 433px;
   height: 386px;
   border-radius: 38px;
