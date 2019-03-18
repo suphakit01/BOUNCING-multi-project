@@ -350,32 +350,44 @@ a:focus, a:active {
   justify-content: center;
 }
 .stop-game .score-container {
-  background-color: #4C4660;*/
-  width: 433px;
+  /*background-color: #4C4660;*/
+  width: 340px;
   height: 386px;
   border-radius: 38px;
   text-align: center;
 }
 .stop-game .score-container h1 {
-  color: #fff;
+  color: #092630;
   text-transform: uppercase;
   letter-spacing: -0.1em;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 4px;
   font-size: 64px;
 }
+
+.boxscore{
+  background-color: #4C4660;
+  position: relative;
+  height: 200px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
 .stop-game .score-container .final-score {
+  position: relative;
   color: #FFE345;
   font-weight: 900;
   font-size: 130px;
   letter-spacing: -6px;
   line-height: 110px;
+  top: 35px;
 }
 .stop-game .score-container .result {
   color: #FF4571;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    position: relative;
+    top: 35px;
 }
 .stop-game .score-container h4 {
   color: #fff;
