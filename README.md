@@ -5,7 +5,7 @@ Bouncing Alien changes color that match the bar
 * 
 
 ## Resources
-* `ridershipData1999-2018` - [http://www.btsgroup.co.th](http://www.btsgroup.co.th/th/investor-relations/bts-ridership)
+* Example Code- [https://codepen.io](https://codepen.io/gregh/pen/yVLOyO)
 
 ## Presentation
 * [GAME](https://suphakit01.github.io/alien-bounce-game/)
