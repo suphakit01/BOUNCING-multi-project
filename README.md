@@ -1,9 +1,6 @@
 # ALIEN BOUNCE
 Bouncing Alien changes color that match the bar
 
-## Topic
-* 
-
 ## Resources
 * Example Code- [https://codepen.io](https://codepen.io/gregh/pen/yVLOyO)
 
